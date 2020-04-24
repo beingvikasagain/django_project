@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1>fill out the Form!</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <form method="post">
+          {% csrf_token %}
+          {{insert_form.as_p}}
+
+          <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+
+      </div>
+
+    </div>
+  </body>
+</html>
